@@ -1,8 +1,14 @@
 let registros = [];
 
 function login(){
-    validarCAPTCHA();
+    let usuar = document.getElementById('correo').value;
+    let telefono = document.getElementById('telefono').value;
+    let contrasena = document.getElementById('contrasena').value;
     /*aqui crear un if{}else{} dependiendo del retorno de validarCAPTCHA()*/
+
+    /*Luego se invoca la funcion:*/
+    validarCAPTCHA();
+    
 }
 
 function agregarRegistro(){
@@ -33,7 +39,7 @@ function validarCAPTCHA(captcha){
         console.log("correcto")
         return true;
     }else{
-        console.log("Respuesta incorrecta")
+        console.log("No cumple")
         return false;
     }
 }
