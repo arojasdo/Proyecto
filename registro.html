@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<!---MEJORAR PARTE GRAFICA-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css" class="re">
+    <title>Registro</title>
+    <script src="registro.js"></script> 
+</head>
+
+<body>
+    <Section>
+        <header>
+            <h1>Registro</h1>
+        </header>
+        <br>
+        <form id="form-registro" >
+            <label for="nombre">Nombre</label>
+            <br>
+            <input type="text" id="nombre" name="nombre" />
+            <br>
+            <br>
+            <br>
+            <label for="genero">Genero</label>
+            <div>
+                <input type="radio" id="genero" name="genero" value="F" unchecked>
+                <label for="femenino">F</label>
+            </div>
+            <div>
+                <input type="radio" id="genero" name="genero" value="M">
+                <label for="masculino">M</label>
+            </div>
+            <br>
+            <label for="tel">Telefono</label>
+            <br>
+            <input type="tel" placeholder="" id="telefono" name="telefono">
+            <br>
+            <br>
+            <label for="direccion">Direccion</label>
+            <br>
+            <input type="text" name="direccion" id="direccion">
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="text" name="correo" id="correo">
+            <br>
+            <br>
+            <label for="contrasena">Contraseña</label>
+            <br>
+            <input type="password" id="contrasena" name="contrasena" />
+            <br>
+            <br>
+            <!--<input type="submit" id="btn-submit-form" value="Registrar" />-->
+            
+        </form>
+        <button type="submit" id="btn-submit-form" value="Registrar" onclick="agregarRegistro()">Registrar</button>
+    </Section>
+    
+</body>
+
+</html>

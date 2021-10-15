@@ -1,0 +1,49 @@
+<!---MEJORAR PARTE GRAFICA-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css" class="re">
+    <script src="login.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    
+    <Section>
+        <header>
+            <h1>Login</h1>
+        </header>
+        <br>
+        <form id="form-login" >
+            
+            <label for="correo">Correo</label>
+            <br>
+            <input type="text" placeholder="Correo" name="correo" id="correo">
+            <br>
+            <br>
+
+            <label for="tel">Telefono</label>
+            <br>
+            <input type="tel" placeholder="Telefono" id="telefono" name="telefono">
+            <br>
+            <br>
+            
+            
+            <label for="contrasena">Contraseña</label>
+            <br>
+            <input type="password" placeholder="Contraseña" id="contrasena" name="contrasena" />
+            <br>
+            <br>
+            <label for="captcha">"El alba es al amanecer como el (…) es al atardecer"</label>
+            <br>
+            <input type="text" placeholder="Su respuesta" id="captcha" name="captcha" />
+            
+        </form>
+        <br>
+        <button type="submit" id="btn-submit-form" value="Registrar" onclick="login()">Entrar</button>
+    </Section>
+
+</body>
+</html>
